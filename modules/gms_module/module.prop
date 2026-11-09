@@ -1,0 +1,6 @@
+id=gms13
+name=GMS (MindTheGapps 13) Magisk Module
+version=1.0
+versionCode=1
+author=workbuddy
+description=Google Mobile Services (Play Store / GMS) overlaid via Magisk for read-only (erofs) systems. Removable from Magisk Manager.

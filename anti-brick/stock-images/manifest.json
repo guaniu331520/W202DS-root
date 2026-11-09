@@ -1,0 +1,100 @@
+{
+  "device": "ZTE W202DS (Unisoc ums9620, Android 13)",
+  "created": "2026-11-09T12:49:34",
+  "source": "flash-tools/stock_backup/ (21 factory partition images)",
+  "partition_count": 21,
+  "uncompressed_bytes": 409098504,
+  "compression": "tar.gz (gzip level 6)",
+  "compressed_bytes": 84294184,
+  "archive": "stock_backup.tar.gz",
+  "archive_sha256": "cb07ae48457a53939c9808fff957fda356ba2954441e3bcc329deaf424926a49",
+  "part_size_bytes": 5242880,
+  "part_count": 17,
+  "parts": [
+    {
+      "name": "stock_backup.tar.gz.part01",
+      "bytes": 5242880,
+      "sha256": "4bcb70b9f8fa88bec5b4ffb0c4b9f02549ac2fbab2706a53e3aee2f5ee7ffbd0"
+    },
+    {
+      "name": "stock_backup.tar.gz.part02",
+      "bytes": 5242880,
+      "sha256": "702475e853f64bcbbd81922a805a0fae4e6d6808561e750ff583b82a8925617a"
+    },
+    {
+      "name": "stock_backup.tar.gz.part03",
+      "bytes": 5242880,
+      "sha256": "9cd36e1614094f52c0c1ea50a1383bf8935a10cf3d6f5c5a0e31b548e11fbb7e"
+    },
+    {
+      "name": "stock_backup.tar.gz.part04",
+      "bytes": 5242880,
+      "sha256": "2d5904134ac78dfb27cd5811eaf1bcbf0f82f86bf9b6815e9a3d0e750a466539"
+    },
+    {
+      "name": "stock_backup.tar.gz.part05",
+      "bytes": 5242880,
+      "sha256": "4662438e84fa2f86c39e6e15905fea8524a823696ee4571c2f5b67d640b1f6c8"
+    },
+    {
+      "name": "stock_backup.tar.gz.part06",
+      "bytes": 5242880,
+      "sha256": "30fed25a14b0a1d9b84a0af7fd60592dfa4ce0842dc0bd0e46d19d7cd5f07828"
+    },
+    {
+      "name": "stock_backup.tar.gz.part07",
+      "bytes": 5242880,
+      "sha256": "6c63f13c841fd1d2d8bba7426c0387db0175129a02a00de138c1d04f1238d170"
+    },
+    {
+      "name": "stock_backup.tar.gz.part08",
+      "bytes": 5242880,
+      "sha256": "a9eb1e2c7cd62b6d128418afb8d1db1966441bc6035ea3b3e23e6ab1c587d80c"
+    },
+    {
+      "name": "stock_backup.tar.gz.part09",
+      "bytes": 5242880,
+      "sha256": "e2121cf98ba586696f1856a781c379112d8a8b2b646b12927743af39ac19ecd3"
+    },
+    {
+      "name": "stock_backup.tar.gz.part10",
+      "bytes": 5242880,
+      "sha256": "67316c112330ebcb83c7b826aee6f0803e7a622c35d6dd59228b23133e82676a"
+    },
+    {
+      "name": "stock_backup.tar.gz.part11",
+      "bytes": 5242880,
+      "sha256": "2b8d184c45fd9c999e1d95d4adebaba039625bf83a465fc2b75eba4ac54f8fb2"
+    },
+    {
+      "name": "stock_backup.tar.gz.part12",
+      "bytes": 5242880,
+      "sha256": "7f12a5c2cefea81c4c76746923102e3344e933aa7908f11070a41bc94a24f921"
+    },
+    {
+      "name": "stock_backup.tar.gz.part13",
+      "bytes": 5242880,
+      "sha256": "36adaab3aae3c209f96186b87d88c240ba54cb78351a08bf676511f17df7de5e"
+    },
+    {
+      "name": "stock_backup.tar.gz.part14",
+      "bytes": 5242880,
+      "sha256": "10f9402863b4e0067b58351b67ad63979ed997f42c625ae4c47b447ec5123c54"
+    },
+    {
+      "name": "stock_backup.tar.gz.part15",
+      "bytes": 5242880,
+      "sha256": "633a4da7bfa15404282e3fbda25bf3fcb798f78d833467864286c0c557b6c998"
+    },
+    {
+      "name": "stock_backup.tar.gz.part16",
+      "bytes": 5242880,
+      "sha256": "3bcefb8218c295272d3c0f4d36921b11ef2a2506d5c56a0e72ff4f938d0d1f44"
+    },
+    {
+      "name": "stock_backup.tar.gz.part17",
+      "bytes": 408104,
+      "sha256": "d7a04d7b52630421faa7d51d59abc8990e622fae5b52dad369cf9a782215d50a"
+    }
+  ]
+}

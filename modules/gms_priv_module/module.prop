@@ -1,0 +1,6 @@
+id=gms_priv
+name=GMS Privileged (bind-mount factory GMS into /product/priv-app)
+version=1.0
+versionCode=1
+author=workbuddy
+description=Promotes the device's factory (OEM-signed) GMS packages (Play Store, GmsCore, GSF) to a privileged system location via a tmpfs bind-mount over /product/priv-app, and adds the privapp-permissions allowlist, so GSF can obtain READ_DEVICE_CONFIG and Google Play functions. No system partition writes (erofs read-only); pure VFS bind mount.

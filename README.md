@@ -471,11 +471,11 @@ android.clients.google.com/74.125.203.102 (port 443) after 25000ms
 临时验证可用（**拔线即失效，会导致设备网络半瘫，测完务必清除**）：
 
 ```bash
-adb reverse tcp:7897 tcp:7897
-adb shell settings put global http_proxy 127.0.0.1:7897
+adb reverse tcp:端口 tcp:端口     #端口为PC代理开放的端口根据代理自行填入
+adb shell settings put global http_proxy 127.0.0.1:端口
 # ... 验证 ...
 adb shell settings delete global http_proxy
-adb reverse --remove tcp:7897
+adb reverse --remove tcp:端口
 ```
 
 ---

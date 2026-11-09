@@ -1,0 +1,6 @@
+id=adbroot
+name=ADB Root Enabler (toggle)
+version=1.2
+versionCode=3
+author=workbuddy
+description=Grants adb shell (uid 2000) root via Magisk, toggleable. State file /data/adb/adbroot/state (on/off). On uninstall the policy is removed and the access setting is reset - no orphan entries left in the Magisk database.

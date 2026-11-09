@@ -1,0 +1,378 @@
+[12:48:20] === BASELINE ===
+[12:48:28] adb connectivity confirmed
+[12:48:28] adb online: W202DS
+[12:48:28] battery: status: 5 |   level: 100
+[12:48:28] BL: 1 | green
+[12:48:29] boot_completed: 1
+[12:48:31] spd_dump waiter started (pid 13420), interactive mode
+[12:48:31] TRIGGER: adb reboot autodloader
+ver:251, sha1:e49d4de1255895db9b6d75ad973f1f78e9b30e90
+Waiting for dl_diag connection (600s)
+[12:48:35]   adb response: (ok, connection dropped as expected)
+libusb_control_transfer ok
+send (1):
+7e                 |~|
+recv (20):
+7e 00 81 00 0c 53 50 52 44 34 3a 41 75 74 6f 44  |~....SPRD4:AutoD|
+00 fd 8b 7e              |...~|
+CHECK_BAUD bootrom
+BSL_REP_VER[12:48:42] MARKER: BSL_REP_VER
+: "SPRD4:AutoD\0"
+send (8):
+7e 00 00 00 00 00 00 7e          |~......~|
+recv (8):
+7e 00 80 00 00 3b 5a 7e          |~....;Z~|
+CMD_CONNECT[12:48:42] MARKER: CMD_CONNECT
+ bootrom
+send (8):
+7e 00 04 00 00 dc c0 7e          |~......~|
+recv (8):
+7e 00 80 00 00 3b 5a 7e          |~....;Z~|
+EXEC FDL1
+send (1):
+7e                 |~|
+recv (20):
+7e 00 81 00 0c 53 50 52 44 34 3a 41 75 74 6f 44  |~....SPRD4:AutoD|
+00 2b bf 7e              |.+.~|
+CHECK_BAUD FDL1
+BSL_REP_VER: "SPRD4:AutoD\0"
+send (8):
+7e 00 00 00 00 ff ff 7e          |~......~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+CMD_CONNECT FDL1
+send (8):
+7e 00 13 00 00 ff ec 7e          |~......~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+KEEP_CHARGE FDL1
+send (8):
+7e 00 04 00 00 ff fb 7e          |~......~|
+recv (66):
+7e 00 96 00 3a 6e 65 77 74 00 00 04 00 01 00 00  |~...:newt.......|
+00 01 00 01 00 06 02 00 01 00 02 03 00 04 00 00  |................|
+08 00 00 05 00 08 00 ff ff ff ff ff ff ff ff 06  |................|
+00 04 00 02 01 00 00 07 00 04 00 01 00 00 00 e0  |................|
+47 7e                |G~|
+FDL2: incompatible partition
+EXEC FDL2
+send (8):
+7e 00 21 00 00 ff de 7e          |~.!....~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+DISABLE_TRANSCODE
+send (84):
+7e 00 10 00 4c 73 00 70 00 6c 00 6c 00 6f 00 61  |~...Ls.p.l.l.o.a|
+00 64 00 65 00 72 00 00 00 00 00 00 00 00 00 00  |.d.e.r..........|
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 00 00 00 00 00 00 00 00 00 00 00 00 08 00 00  |................|
+00 31 a0 7e              |.1.~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+send (16):
+7e 00 11 00 08 08 00 00 00 00 00 00 00 f7 e6 7e  |~..............~|
+recv (16):
+7e 00 93 00 08 44 48 54 42 01 00 00 00 65 da 7e  |~....DHTB....e.~|
+send (8):
+7e 00 12 00 00 ff ed 7e          |~......~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+send (84):
+7e 00 10 00 4c 73 00 70 00 6c 00 6c 00 6f 00 61  |~...Ls.p.l.l.o.a|
+00 64 00 65 00 72 00 00 00 00 00 00 00 00 00 00  |.d.e.r..........|
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 00 00 00 00 00 00 00 00 00 00 00 00 ff ff ff  |................|
+ff 39 a0 7e              |.9.~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+send (20):
+7e 00 11 00 0c 04 00 00 00 00 00 10 00 00 00 00  |~...............|
+00 eb e2 7e              |...~|
+recv (12):
+7e 00 93 00 04 00 00 00 00 ff 68 7e      |~.........h~|
+send (20):
+7e 00 11 00 0c 04 00 00 00 00 00 30 00 00 00 00  |~..........0....|
+00 cb e2 7e              |...~|
+recv (12):
+7e 00 93 00 04 00 00 00 00 ff 68 7e      |~.........h~|
+send (20):
+7e 00 11 00 0c 04 00 00 00 00 00 70 00 00 00 00  |~..........p....|
+00 8b e2 7e              |...~|
+recv (8):
+7e 00 d2 00 00 ff 2d 7e          |~.....-~|
+send (20):
+7e 00 11 00 0c 04 00 00 00 00 00 50 00 00 00 00  |~..........P....|
+00 ab e2 7e              |...~|
+recv (8):
+7e 00 d2 00 00 ff 2d 7e          |~.....-~|
+send (20):
+7e 00 11 00 0c 04 00 00 00 00 00 40 00 00 00 00  |~..........@....|
+00 bb e2 7e              |...~|
+recv (8):
+7e 00 d2 00 00 ff 2d 7e          |~.....-~|
+partition_size_pc: splloader, 0x400000
+send (8):
+7e 00 12 00 00 ff ed 7e          |~......~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+send (8):
+7e 00 73 00 00 ff 8c 7e          |~.s....~|
+recv (8):
+7e 00 fe 00 00 ff 01 7e          |~......~|
+unexpected response (0x00fe)
+Reading Partition List
+Start to read partition user_partition, type CTRL + C to cancel...
+[=====                                   ]  12.5% Speed:   infMb/s[==========                              ]  25.0% Speed:  0.52Mb/s[===============                         ]  37.5% Speed:  0.78Mb/s[====================                    ]  50.0% Speed:  1.04Mb/s[=========================               ]  62.5% Speed:  1.30Mb/s[==============================          ]  75.0% Speed:  1.56Mb/s[===================================     ]  87.5% Speed:  1.82Mb/s[========================================] 100.0% Speed:  2.08Mb/s
+Read Part Done: user_partition+0x0, target: 0x8000, read: 0x8000
+  0                            splloader     256KB
+  1                               prodnv      64MB
+  2                             miscdata       1MB
+  3                                 misc       1MB
+  4                            trustos_a       6MB
+  5                            trustos_b       6MB
+  6                                sml_a       1MB
+  7                                sml_b       1MB
+  8                              uboot_a       5MB
+  9                              uboot_b       5MB
+ 10                            uboot_log      16MB
+ 11                               logo_a      50MB
+ 12                               logo_b      50MB
+ 13                            fbootlogo       8MB
+ 14                          nr_fixnv1_a      50MB
+ 15                          nr_fixnv1_b      50MB
+ 16                          nr_fixnv2_a      50MB
+ 17                          nr_fixnv2_b      50MB
+ 18                        nr_runtimenv1      55MB
+ 19                        nr_runtimenv2      55MB
+ 20                              persist       2MB
+ 21                               ztecfg       8MB
+ 22                           ztepersist      32MB
+ 23                           nr_modem_a      50MB
+ 24                           nr_modem_b      50MB
+ 25                         nr_deltanv_a       1MB
+ 26                         nr_deltanv_b       1MB
+ 27                             nr_phy_a      50MB
+ 28                             nr_phy_b      50MB
+ 29                            l_agdsp_a       6MB
+ 30                            l_agdsp_b       6MB
+ 31                             pm_sys_a       1MB
+ 32                             pm_sys_b       1MB
+ 33                             ch_sys_a      16MB
+ 34                             ch_sys_b      16MB
+ 35                             teecfg_a       1MB
+ 36                             teecfg_b       1MB
+ 37                         hypervsior_a      10MB
+ 38                         hypervsior_b      10MB
+ 39                               boot_a      64MB
+ 40                               boot_b      64MB
+ 41                        vendor_boot_a     100MB
+ 42                        vendor_boot_b     100MB
+ 43                          init_boot_a       8MB
+ 44                          init_boot_b       8MB
+ 45                                dtb_a       8MB
+ 46                                dtb_b       8MB
+ 47                               dtbo_a       8MB
+ 48                               dtbo_b       8MB
+ 49                                super    6368MB
+ 50                                cache     500MB
+ 51                             blackbox     500MB
+ 52                             vbmeta_a       1MB
+ 53                             vbmeta_b       1MB
+ 54                             metadata      64MB
+ 55                            sysdumpdb      10MB
+ 56                      vbmeta_system_a       1MB
+ 57                      vbmeta_system_b       1MB
+ 58                      vbmeta_vendor_a       1MB
+ 59                      vbmeta_vendor_b       1MB
+ 60                  vbmeta_system_ext_a       1MB
+ 61                  vbmeta_system_ext_b       1MB
+ 62                     vbmeta_product_a       1MB
+ 63                     vbmeta_product_b       1MB
+ 64                         vbmeta_odm_a       1MB
+ 65                         vbmeta_odm_b       1MB
+ 66                         avbmeta_rs_a       1MB
+ 67                         avbmeta_rs_b       1MB
+ 68                         common_rs1_a       8MB
+ 69                         common_rs1_b       8MB
+ 70                         common_rs2_a      16MB
+ 71                         common_rs2_b      16MB
+ 72                                ise_a       4MB
+ 73                                ise_b       4MB
+ 74                              isedata      34MB
+ 75                               calinv      15MB
+ 76                             userdata  109240MB
+standard gpt table dumped successfully
+send (84):
+7e 00 10 00 4c 6d 00 69 00 73 00 63 00 00 00 7e  |~...Lm.i.s.c...~|
+00 61 00 72 00 74 00 69 00 74 00 69 00 6f 00 6e  |.a.r.t.i.t.i.o.n|
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 00 00 00 00 00 00 00 00 00 00 00 00 20 08 00  |................|
+00 4b 96 7e              |.K.~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+send (16):
+7e 00 11 00 08 20 00 00 00 00 08 00 00 df de 7e  |~..............~|
+recv (40):
+7e 00 93 00 20 5f 61 00 00 42 43 41 42 01 02 00  |~...._a..BCAB...|
+00 ff 00 0f 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 96 b1 8d 84 e9 2c 7e          |......,~|
+send (8):
+7e 00 12 00 00 ff ed 7e          |~......~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+send (84):
+7e 00 10 00 4c 75 00 62 00 6f 00 6f 00 74 00 5f  |~...Lu.b.o.o.t._|
+00 61 00 5f 00 73 00 69 00 7a 00 65 00 00 00 6e  |.a._.s.i.z.e...n|
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 00 00 00 00 00 00 00 00 00 00 00 00 80 00 00  |................|
+00 0e 9e 7e              |...~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+send (16):
+7e 00 11 00 08 80 00 00 00 00 00 00 00 7f e6 7e  |~..............~|
+recv (8):
+7e 00 d2 00 00 ff 2d 7e          |~.....-~|
+send (8):
+7e 00 12 00 00 ff ed 7e          |~......~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+send (84):
+7e 00 10 00 4c 75 00 62 00 6f 00 6f 00 74 00 5f  |~...Lu.b.o.o.t._|
+00 61 00 00 00 73 00 69 00 7a 00 65 00 00 00 6e  |.a...s.i.z.e...n|
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  |................|
+00 00 00 00 00 00 00 00 00 00 00 00 00 08 00 00  |................|
+00 e5 9e 7e              |...~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+send (16):
+7e 00 11 00 08 08 00 00 00 00 00 00 00 f7 e6 7e  |~..............~|
+recv (16):
+7e 00 93 00 08 44 48 54 42 01 00 00 00 65 da 7e  |~....DHTB....e.~|
+send (8):
+7e 00 12 00 00 ff ed 7e          |~......~|
+recv (8):
+7e 00 80 00 00 ff 7f 7e          |~......~|
+Total number of partitions: 76
+Storage is emmc
+DISABLE_WRITE_RAW_DATA in SPRD4
+Device is using slot a
+FDL2 >[12:48:42] MARKER: FDL2 >
+[12:48:43]   connected=True markers=BSL_REP_VER,CMD_CONNECT,FDL2 >
+[12:48:43] === BROM SESSION HELD, sending READ-ONLY commands ===
+[12:48:43] SENT: verbose 2
+FDL2 >[12:48:49] SENT: timeout 20000
+FDL2 >[12:48:55] SENT: path C:\Users\Administrator\WorkBuddy\2026-11-07-21-28-02\flash-tools\backup
+save dir is C:\Users\Administrator\WorkBuddy\2026-11-07-21-28-02\flash-tools\backup
+FDL2 >[12:49:01] SENT: p
+  0                            splloader     256KB
+  1                               prodnv      64MB
+  2                             miscdata       1MB
+  3                                 misc       1MB
+  4                            trustos_a       6MB
+  5                            trustos_b       6MB
+  6                                sml_a       1MB
+  7                                sml_b       1MB
+  8                              uboot_a       5MB
+  9                              uboot_b       5MB
+ 10                            uboot_log      16MB
+ 11                               logo_a      50MB
+ 12                               logo_b      50MB
+ 13                            fbootlogo       8MB
+ 14                          nr_fixnv1_a      50MB
+ 15                          nr_fixnv1_b      50MB
+ 16                          nr_fixnv2_a      50MB
+ 17                          nr_fixnv2_b      50MB
+ 18                        nr_runtimenv1      55MB
+ 19                        nr_runtimenv2      55MB
+ 20                              persist       2MB
+ 21                               ztecfg       8MB
+ 22                           ztepersist      32MB
+ 23                           nr_modem_a      50MB
+ 24                           nr_modem_b      50MB
+ 25                         nr_deltanv_a       1MB
+ 26                         nr_deltanv_b       1MB
+ 27                             nr_phy_a      50MB
+ 28                             nr_phy_b      50MB
+ 29                            l_agdsp_a       6MB
+ 30                            l_agdsp_b       6MB
+ 31                             pm_sys_a       1MB
+ 32                             pm_sys_b       1MB
+ 33                             ch_sys_a      16MB
+ 34                             ch_sys_b      16MB
+ 35                             teecfg_a       1MB
+ 36                             teecfg_b       1MB
+ 37                         hypervsior_a      10MB
+ 38                         hypervsior_b      10MB
+ 39                               boot_a      64MB
+ 40                               boot_b      64MB
+ 41                        vendor_boot_a     100MB
+ 42                        vendor_boot_b     100MB
+ 43                          init_boot_a       8MB
+ 44                          init_boot_b       8MB
+ 45                                dtb_a       8MB
+ 46                                dtb_b       8MB
+ 47                               dtbo_a       8MB
+ 48                               dtbo_b       8MB
+ 49                                super    6368MB
+ 50                                cache     500MB
+ 51                             blackbox     500MB
+ 52                             vbmeta_a       1MB
+ 53                             vbmeta_b       1MB
+ 54                             metadata      64MB
+ 55                            sysdumpdb      10MB
+ 56                      vbmeta_system_a       1MB
+ 57                      vbmeta_system_b       1MB
+ 58                      vbmeta_vendor_a       1MB
+ 59                      vbmeta_vendor_b       1MB
+ 60                  vbmeta_system_ext_a       1MB
+ 61                  vbmeta_system_ext_b       1MB
+ 62                     vbmeta_product_a       1MB
+ 63                     vbmeta_product_b       1MB
+ 64                         vbmeta_odm_a       1MB
+ 65                         vbmeta_odm_b       1MB
+ 66                         avbmeta_rs_a       1MB
+ 67                         avbmeta_rs_b       1MB
+ 68                         common_rs1_a       8MB
+ 69                         common_rs1_b       8MB
+ 70                         common_rs2_a      16MB
+ 71                         common_rs2_b      16MB
+ 72                                ise_a       4MB
+ 73                                ise_b       4MB
+ 74                              isedata      34MB
+ 75                               calinv      15MB
+ 76                             userdata  109240MB
+FDL2 >[12:49:07] SENT: read_mem 0x0 0x100 brom_mem0.bin
+send (20):
+7e 00 06 00 0c 00 00 00 00 00 00 01 00 00 00 00  |~...............|
+00 fe ed 7e              |...~|
+recv (8):
+7e 00 fe 00 00 ff 01 7e          |~......~|
+unexpected response (0x00fe)
+Read Mem Done: 0x00000000, target: 0x100, read: 0x0
+FDL2 >[12:49:13] SENT: read_flash 0 0 0x1000 flash_a_4k.bin
+send (20):
+7e 00 06 00 0c 00 00 00 00 00 00 10 00 00 00 00  |~...............|
+00 ef ed 7e              |...~|
+recv (8):
+7e 00 fe 00 00 ff 01 7e          |~......~|
+Partition 0x00000000 not found (code 0x00fe)
+FDL2 >[12:49:19] SENT: read_flash 0x80000001 0 0x1000 flash_b_4k.bin
+send (20):
+7e 00 06 00 0c 80 00 00 01 00 00 10 00 00 00 00  |~...............|
+00 6f ec 7e              |.o.~|
+[12:49:25] SENT: read_flash 0 0 0x20000 flash_c_128k.bin
+[12:49:31] SENT: read_flash 0x80000001 0 0x20000 flash_d_128k.bin
+[12:49:37] SENT: partition_list partitions.xml
+usb_send failed : LIBUSB_ERROR_TIMEOUT
+请按任意键继续. . . 
+[12:49:43] stdin write failed: [Errno 22] Invalid argument
+[12:49:43] commands done; holding 15s for transfers
+[12:49:58] spd_dump terminated (USB released -> BootROM will continue to Android)
+[12:49:58] === WAITING FOR ANDROID (up to 150s) ===
+[12:52:31] WARNING: Android not back yet. Hold POWER 10-15s on the tablet to reboot. No data was modified.
+[12:52:31] REPORT: C:\Users\Administrator\WorkBuddy\2026-11-07-21-28-02\flash-tools\auto_probe_report.md

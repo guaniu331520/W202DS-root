@@ -1,0 +1,268 @@
+[16:57:06] === WRITE-BACK VERIFICATION (content-identical) ===
+[16:57:13] adb unauthorized - waiting up to 10 min for the user to confirm the USB debugging dialog
+[17:00:00] adb authorized after 155s
+[17:00:00] baseline build: 100240302
+[17:00:00] baseline BL: 1 | green
+[17:00:00] stock misc sha256: 53921b77dcd7c2431ed334895ed8664c6e4d54b6660757a47d9f3f737ffe9477
+[17:00:00] commands: w misc <stock> ; r misc ; reset
+ver:251, sha1:e49d4de1255895db9b6d75ad973f1f78e9b30e90
+Waiting for dl_diag connection (300s)
+[17:00:02] TRIGGER: adb reboot autodloader
+libusb_control_transfer ok
+send: check baud
+recv: type = 0x81, size = 12
+CHECK_BAUD bootrom
+BSL_REP_VER: "SPRD4:AutoD\0"
+send: type = 0x00, size = 0
+recv: type = 0x80, size = 0
+CMD_CONNECT bootrom
+send: type = 0x04, size = 0
+recv: type = 0x80, size = 0
+EXEC FDL1[17:00:14] MARKER: EXEC FDL1
+
+send: check baud
+recv: type = 0x81, size = 12
+CHECK_BAUD FDL1
+BSL_REP_VER: "SPRD4:AutoD\0"
+send: type = 0x00, size = 0
+recv: type = 0x80, size = 0
+CMD_CONNECT FDL1
+send: type = 0x13, size = 0
+recv: type = 0x80, size = 0
+KEEP_CHARGE FDL1
+send: type = 0x04, size = 0
+recv: type = 0x96, size = 58
+FDL2: incompatible partition
+EXEC FDL2[17:00:14] MARKER: EXEC FDL2
+
+send: type = 0x21, size = 0
+recv: type = 0x80, size = 0
+DISABLE_TRANSCODE
+send: type = 0x10, size = 76
+recv: type = 0x80, size = 0
+send: type = 0x11, size = 8
+recv: type = 0x93, size = 8
+send: type = 0x12, size = 0
+recv: type = 0x80, size = 0
+send: type = 0x10, size = 76
+recv: type = 0x80, size = 0
+send: type = 0x11, size = 12
+recv: type = 0x93, size = 4
+send: type = 0x11, size = 12
+recv: type = 0x93, size = 4
+send: type = 0x11, size = 12
+recv: type = 0xd2, size = 0
+send: type = 0x11, size = 12
+recv: type = 0xd2, size = 0
+send: type = 0x11, size = 12
+recv: type = 0xd2, size = 0
+partition_size_pc: splloader, 0x400000
+send: type = 0x12, size = 0
+recv: type = 0x80, size = 0
+send: type = 0x73, size = 0
+recv: type = 0xfe, size = 0
+unexpected response (0x00fe)
+Reading Partition List
+Start to read partition user_partition, type CTRL + C to cancel...
+[=====                                   ]  12.5% Speed:  0.24Mb/s[==========                              ]  25.0% Speed:  0.49Mb/s[===============                         ]  37.5% Speed:  0.73Mb/s[====================                    ]  50.0% Speed:  0.98Mb/s[=========================               ]  62.5% Speed:  1.22Mb/s[==============================          ]  75.0% Speed:  1.46Mb/s[===================================     ]  87.5% Speed:  1.71Mb/s[========================================] 100.0% Speed:  1.95Mb/s
+Read Part Done[17:00:14] MARKER: Read Part Done
+: user_partition+0x0, target: 0x8000, read: 0x8000
+  0                            splloader     256KB
+  1                               prodnv      64MB
+  2                             miscdata       1MB
+  3                                 misc       1MB
+  4                            trustos_a       6MB
+  5                            trustos_b       6MB
+  6                                sml_a       1MB
+  7                                sml_b       1MB
+  8                              uboot_a       5MB
+  9                              uboot_b       5MB
+ 10                            uboot_log      16MB
+ 11                               logo_a      50MB
+ 12                               logo_b      50MB
+ 13                            fbootlogo       8MB
+ 14                          nr_fixnv1_a      50MB
+ 15                          nr_fixnv1_b      50MB
+ 16                          nr_fixnv2_a      50MB
+ 17                          nr_fixnv2_b      50MB
+ 18                        nr_runtimenv1      55MB
+ 19                        nr_runtimenv2      55MB
+ 20                              persist       2MB
+ 21                               ztecfg       8MB
+ 22                           ztepersist      32MB
+ 23                           nr_modem_a      50MB
+ 24                           nr_modem_b      50MB
+ 25                         nr_deltanv_a       1MB
+ 26                         nr_deltanv_b       1MB
+ 27                             nr_phy_a      50MB
+ 28                             nr_phy_b      50MB
+ 29                            l_agdsp_a       6MB
+ 30                            l_agdsp_b       6MB
+ 31                             pm_sys_a       1MB
+ 32                             pm_sys_b       1MB
+ 33                             ch_sys_a      16MB
+ 34                             ch_sys_b      16MB
+ 35                             teecfg_a       1MB
+ 36                             teecfg_b       1MB
+ 37                         hypervsior_a      10MB
+ 38                         hypervsior_b      10MB
+ 39                               boot_a      64MB
+ 40                               boot_b      64MB
+ 41                        vendor_boot_a     100MB
+ 42                        vendor_boot_b     100MB
+ 43                          init_boot_a       8MB
+ 44                          init_boot_b       8MB
+ 45                                dtb_a       8MB
+ 46                                dtb_b       8MB
+ 47                               dtbo_a       8MB
+ 48                               dtbo_b       8MB
+ 49                                super    6368MB
+ 50                                cache     500MB
+ 51                             blackbox     500MB
+ 52                             vbmeta_a       1MB
+ 53                             vbmeta_b       1MB
+ 54                             metadata      64MB
+ 55                            sysdumpdb      10MB
+ 56                      vbmeta_system_a       1MB
+ 57                      vbmeta_system_b       1MB
+ 58                      vbmeta_vendor_a       1MB
+ 59                      vbmeta_vendor_b       1MB
+ 60                  vbmeta_system_ext_a       1MB
+ 61                  vbmeta_system_ext_b       1MB
+ 62                     vbmeta_product_a       1MB
+ 63                     vbmeta_product_b       1MB
+ 64                         vbmeta_odm_a       1MB
+ 65                         vbmeta_odm_b       1MB
+ 66                         avbmeta_rs_a       1MB
+ 67                         avbmeta_rs_b       1MB
+ 68                         common_rs1_a       8MB
+ 69                         common_rs1_b       8MB
+ 70                         common_rs2_a      16MB
+ 71                         common_rs2_b      16MB
+ 72                                ise_a       4MB
+ 73                                ise_b       4MB
+ 74                              isedata      34MB
+ 75                               calinv      15MB
+ 76                             userdata  109240MB
+standard gpt table dumped successfully
+send: type = 0x10, size = 76
+recv: type = 0x80, size = 0
+send: type = 0x11, size = 8
+recv: type = 0x93, size = 32
+send: type = 0x12, size = 0
+recv: type = 0x80, size = 0
+send: type = 0x10, size = 76
+recv: type = 0x80, size = 0
+send: type = 0x11, size = 8
+recv: type = 0xd2, size = 0
+send: type = 0x12, size = 0
+recv: type = 0x80, size = 0
+send: type = 0x10, size = 76
+recv: type = 0x80, size = 0
+send: type = 0x11, size = 8
+recv: type = 0x93, size = 8
+send: type = 0x12, size = 0
+recv: type = 0x80, size = 0
+Total number of partitions: 76
+Storage is emmc
+DISABLE_WRITE_RAW_DATA in SPRD4
+Device is using slot a
+current exec_addr is 0x0
+FDL2 ALREADY EXECUTED, SKIP
+FDL2 ALREADY EXECUTED, SKIP
+FDL2 ALREADY EXECUTED, SKIP
+save dir is C:\Users\Administrator\WorkBuddy\2026-11-07-21-28-02\flash-tools\write[17:00:14] MARKER: write
+back_readback
+file offset: 0x0, file size: 0x100000
+Start to write partition misc, type CTRL + C to cancel...
+send: type = 0x01, size = 76
+recv: type = 0x80, size = 0
+send: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[==                                      ]   6.1% Speed:   infMb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[====                                    ]  12.1% Speed:   infMb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[=======                                 ]  18.2% Speed:   infMb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[=========                               ]  24.2% Speed:   infMb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[============                            ]  30.3% Speed:   infMb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[==============                          ]  36.3% Speed:   infMb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[================                        ]  42.4% Speed:   infMb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[===================                     ]  48.4% Speed: 30.27Mb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[=====================                   ]  54.5% Speed: 34.06Mb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[========================                ]  60.5% Speed: 37.84Mb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[==========================              ]  66.6% Speed: 41.63Mb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[=============================           ]  72.7% Speed: 45.41Mb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[===============================         ]  78.7% Speed: 49.19Mb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[=================================       ]  84.8% Speed: 52.98Mb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[====================================    ]  90.8% Speed: 56.76Mb/ssend: type = 0x02, size = 63488
+recv: type = 0x80, size = 0
+[======================================  ]  96.9% Speed: 31.25Mb/ssend: type = 0x02, size = 32768
+recv: type = 0x80, size = 0
+[========================================] 100.0% Speed: 32.26Mb/ssend: type = 0x03, size = 0
+recv: type = 0x80, size = 0
+
+Write Part Done[17:00:14] MARKER: Write Part Done
+: misc, target: 0x100000, written: 0x100000
+Start to read partition misc, type CTRL + C to cancel...
+send: type = 0x10, size = 76
+recv: type = 0x80, size = 0
+send: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[==                                      ]   6.1% Speed:   infMb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[====                                    ]  12.1% Speed:   infMb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[=======                                 ]  18.2% Speed: 11.35Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[=========                               ]  24.2% Speed: 15.14Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[============                            ]  30.3% Speed: 18.92Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[==============                          ]  36.3% Speed: 22.71Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[================                        ]  42.4% Speed: 26.49Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[===================                     ]  48.4% Speed: 30.27Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[=====================                   ]  54.5% Speed: 17.03Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[========================                ]  60.5% Speed: 18.92Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[==========================              ]  66.6% Speed: 20.81Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[=============================           ]  72.7% Speed: 22.71Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[===============================         ]  78.7% Speed: 24.60Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[=================================       ]  84.8% Speed: 18.04Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[====================================    ]  90.8% Speed: 19.32Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 63488
+[======================================  ]  96.9% Speed: 20.61Mb/ssend: type = 0x11, size = 8
+recv: type = 0x93, size = 32768
+[========================================] 100.0% Speed: 21.28Mb/s
+Read Part Done: misc+0x0, target: 0x100000, read: 0x100000
+send: type = 0x12, size = 0
+recv: type = 0x80, size = 0
+send: type = 0x05, size = 0
+recv: type = 0x80, size = 0
+[17:00:16] spd_dump finished naturally
+[17:00:16] === WAITING FOR ANDROID ===
+[17:00:32] Android is back after 15s
+[17:00:32] readback sha256: 53921b77dcd7c2431ed334895ed8664c6e4d54b6660757a47d9f3f737ffe9477
+[17:00:32] VERDICT: MATCH - write-back works, content unchanged
+[17:00:33] FINAL: {'boot': '', 'BL': '1', 'verified': 'green', 'battery': "Can't find service: battery"}
+[17:00:33] REPORT: C:\Users\Administrator\WorkBuddy\2026-11-07-21-28-02\flash-tools\verify_writeback_report.md

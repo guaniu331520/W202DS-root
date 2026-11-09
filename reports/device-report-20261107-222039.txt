@@ -1,0 +1,345 @@
+﻿W202DS DEVICE PROBE  2026-11-07 22:20:39
+Read-only: no settings changed, no partitions written.
+
+===== ADB DEVICES =====
+List of devices attached
+192.168.1.9:36913      device product:CN_P720P01 model:W202DS device:P720P01 transport_id:1
+
+
+===== KEY PROPERTIES =====
+[ro.product.brand]: [zte]
+[ro.product.model]: [W202DS]
+[ro.product.name]: [CN_P720P01]
+[ro.product.device]: [P720P01]
+[ro.product.manufacturer]: [ZTE]
+[ro.build.version.release]: [13]
+[ro.build.version.sdk]: [33]
+[ro.build.id]: [TP1A.220624.014]
+[ro.build.display.id]: [100240302]
+[ro.build.version.incremental]: [20241013.111830]
+[ro.build.type]: [user]
+[ro.build.tags]: [release-keys]
+[ro.build.date]: [Sun Oct 13 11:57:13 CST 2024]
+[ro.build.fingerprint]: [zte/CN_P720P01/P720P01:13/TP1A.220624.014/20241013.111830:user/release-keys]
+[ro.product.cpu.abi]: [arm64-v8a]
+[ro.product.cpu.abilist]: [arm64-v8a,armeabi-v7a,armeabi]
+[ro.board.platform]: [ums9620]
+[ro.hardware]: [ums9620_2h10]
+[ro.bootloader]: [unknown]
+[ro.boot.slot_suffix]: [_a]
+[ro.boot.flash.locked]: [1]
+[ro.boot.vbmeta.device_state]: [locked]
+[ro.boot.verifiedbootstate]: [green]
+[ro.boot.veritymode]: [enforcing]
+[ro.boot.dynamic_partitions]: [true]
+[ro.boot.mode]: [normal]
+[sys.oem_unlock_allowed]: [1]
+[ro.frp.pst]: [/dev/block/by-name/persist]
+[ro.secure]: [1]
+[ro.debuggable]: [0]
+[persist.sys.usb.config]: [adb]
+[ro.boot.serialno]: [<DEVICE_SERIAL>]
+
+===== BOOTLOADER / UNLOCK RELATED PROPS =====
+[cache_key.is_user_unlocked]: [-6605379078773282070]
+[cache_key.telephony.get_slot_index]: [2852121208423718560]
+[init.svc.create_splloader_dual_slot_byname_path]: [stopped]
+[ro.adb.secure]: [1]
+[ro.boot.dmverity_disabled]: [0]
+[ro.boot.flash.locked]: [1]
+[ro.boot.slot_suffix]: [_a]
+[ro.boot.vbmeta.avb_version]: [1.1]
+[ro.boot.vbmeta.device_state]: [locked]
+[ro.boot.vbmeta.digest]: [f9f1ffc96beaf3defa36773d5b658857b58257f936475eefa9a1e19b6db61e38]
+[ro.boot.vbmeta.hash_alg]: [sha256]
+[ro.boot.vbmeta.size]: [43840]
+[ro.boot.veritymode]: [enforcing]
+[ro.boot.veritymode.managed]: [yes]
+[ro.bootloader]: [unknown]
+[ro.media.xml_variant.codecs]: [_c2_secure]
+[ro.media.xml_variant.codecs_performance]: [_c2_secure]
+[ro.product.ab_ota_partitions]: [boot,ch_sys,dtbo,l_agdsp,logo,mmcblk0boot1,nr_deltanv,nr_fixnv1,nr_fixnv2,nr_modem,nr_phy,odm,pm_sys,product,sdc,sml,system,system_ext,teecfg,trustos,uboot,vbmeta,vbmeta_odm,vbmeta_product,vbmeta_system,vbmeta_system_ext,vbmeta_vendor,vendor,vendor_boot,vendor_dlkm]
+[ro.secure]: [1]
+[ro.secure_boot.state]: [1]
+[ro.simlock.unlock.autoshow]: [1]
+[ro.simlock.unlock.bynv]: [0]
+[ro.vendor.feature.default_value_direct_unlock]: [false]
+[ro.vendor.feature.default_value_slide_unlock]: [true]
+[ro.vendor.feature.zte_recovery_ui]: [true]
+[sys.oem_unlock_allowed]: [1]
+
+===== INSTALLED GOOGLE / GMS PACKAGES =====
+package:com.google.android.networkstack.tethering.overlay
+
+===== DISABLED GOOGLE PACKAGES (may be preinstalled but hidden) =====
+(empty or n/a)
+
+===== ROOT STATUS =====
+uid=2000(shell) gid=2000(shell) groups=2000(shell),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),1078(ext_data_rw),1079(ext_obb_rw),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc),3011(uhid),3012(readtracefs) context=u:r:shell:s0
+---su---
+---magisk---
+---bin---
+
+===== PARTITION TABLE (A/B, dynamic partitions) =====
+total 0
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 avbmeta_rs_a -> /dev/block/mmcblk0p66
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 avbmeta_rs_b -> /dev/block/mmcblk0p67
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 blackbox -> /dev/block/mmcblk0p51
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 boot_a -> /dev/block/mmcblk0p39
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 boot_b -> /dev/block/mmcblk0p40
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 cache -> /dev/block/mmcblk0p50
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 calinv -> /dev/block/mmcblk0p75
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 ch_sys_a -> /dev/block/mmcblk0p33
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 ch_sys_b -> /dev/block/mmcblk0p34
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 common_rs1_a -> /dev/block/mmcblk0p68
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 common_rs1_b -> /dev/block/mmcblk0p69
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 common_rs2_a -> /dev/block/mmcblk0p70
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 common_rs2_b -> /dev/block/mmcblk0p71
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 dtb_a -> /dev/block/mmcblk0p45
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 dtb_b -> /dev/block/mmcblk0p46
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 dtbo_a -> /dev/block/mmcblk0p47
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 dtbo_b -> /dev/block/mmcblk0p48
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 fbootlogo -> /dev/block/mmcblk0p13
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 hypervsior_a -> /dev/block/mmcblk0p37
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 hypervsior_b -> /dev/block/mmcblk0p38
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 init_boot_a -> /dev/block/mmcblk0p43
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 init_boot_b -> /dev/block/mmcblk0p44
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 ise_a -> /dev/block/mmcblk0p72
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 ise_b -> /dev/block/mmcblk0p73
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 isedata -> /dev/block/mmcblk0p74
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 l_agdsp_a -> /dev/block/mmcblk0p29
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 l_agdsp_b -> /dev/block/mmcblk0p30
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 logo_a -> /dev/block/mmcblk0p11
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 logo_b -> /dev/block/mmcblk0p12
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 metadata -> /dev/block/mmcblk0p54
+lrwxrwxrwx 1 root root 20 2026-11-01 22:05 misc -> /dev/block/mmcblk0p3
+lrwxrwxrwx 1 root root 20 2026-11-01 22:05 miscdata -> /dev/block/mmcblk0p2
+lrwxrwxrwx 1 root root 18 2026-11-01 22:05 mmcblk0 -> /dev/block/mmcblk0
+lrwxrwxrwx 1 root root 23 2026-11-01 22:05 mmcblk0boot0 -> /dev/block/mmcblk0boot0
+lrwxrwxrwx 1 root root 23 2026-11-01 22:05 mmcblk0boot1 -> /dev/block/mmcblk0boot1
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_deltanv_a -> /dev/block/mmcblk0p25
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_deltanv_b -> /dev/block/mmcblk0p26
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_fixnv1_a -> /dev/block/mmcblk0p14
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_fixnv1_b -> /dev/block/mmcblk0p15
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_fixnv2_a -> /dev/block/mmcblk0p16
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_fixnv2_b -> /dev/block/mmcblk0p17
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_modem_a -> /dev/block/mmcblk0p23
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_modem_b -> /dev/block/mmcblk0p24
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_phy_a -> /dev/block/mmcblk0p27
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_phy_b -> /dev/block/mmcblk0p28
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_runtimenv1 -> /dev/block/mmcblk0p18
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 nr_runtimenv2 -> /dev/block/mmcblk0p19
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 persist -> /dev/block/mmcblk0p20
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 pm_sys_a -> /dev/block/mmcblk0p31
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 pm_sys_b -> /dev/block/mmcblk0p32
+lrwxrwxrwx 1 root root 20 2026-11-01 22:05 prodnv -> /dev/block/mmcblk0p1
+lrwxrwxrwx 1 root root 20 2026-11-01 22:05 sml_a -> /dev/block/mmcblk0p6
+lrwxrwxrwx 1 root root 20 2026-11-01 22:05 sml_b -> /dev/block/mmcblk0p7
+lrwxrwxrwx 1 root root 23 2026-11-01 22:05 spl_a -> /dev/block/mmcblk0boot0
+lrwxrwxrwx 1 root root 23 2026-11-01 22:05 spl_b -> /dev/block/mmcblk0boot1
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 super -> /dev/block/mmcblk0p49
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 sysdumpdb -> /dev/block/mmcblk0p55
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 teecfg_a -> /dev/block/mmcblk0p35
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 teecfg_b -> /dev/block/mmcblk0p36
+lrwxrwxrwx 1 root root 20 2026-11-01 22:05 trustos_a -> /dev/block/mmcblk0p4
+lrwxrwxrwx 1 root root 20 2026-11-01 22:05 trustos_b -> /dev/block/mmcblk0p5
+lrwxrwxrwx 1 root root 20 2026-11-01 22:05 uboot_a -> /dev/block/mmcblk0p8
+lrwxrwxrwx 1 root root 20 2026-11-01 22:05 uboot_b -> /dev/block/mmcblk0p9
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 uboot_log -> /dev/block/mmcblk0p10
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 userdata -> /dev/block/mmcblk0p76
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_a -> /dev/block/mmcblk0p52
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_b -> /dev/block/mmcblk0p53
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_odm_a -> /dev/block/mmcblk0p64
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_odm_b -> /dev/block/mmcblk0p65
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_product_a -> /dev/block/mmcblk0p62
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_product_b -> /dev/block/mmcblk0p63
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_system_a -> /dev/block/mmcblk0p56
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_system_b -> /dev/block/mmcblk0p57
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_system_ext_a -> /dev/block/mmcblk0p60
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_system_ext_b -> /dev/block/mmcblk0p61
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_vendor_a -> /dev/block/mmcblk0p58
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vbmeta_vendor_b -> /dev/block/mmcblk0p59
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vendor_boot_a -> /dev/block/mmcblk0p41
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 vendor_boot_b -> /dev/block/mmcblk0p42
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 ztecfg -> /dev/block/mmcblk0p21
+lrwxrwxrwx 1 root root 21 2026-11-01 22:05 ztepersist -> /dev/block/mmcblk0p22
+
+===== KERNEL CMDLINE =====
+(empty or n/a)
+
+===== MOUNTS AND FREE SPACE =====
+Filesystem       Size Used Avail Use% Mounted on
+/dev/block/dm-6  3.9G 3.9G     0 100% /
+/dev/block/dm-8  585M 585M     0 100% /vendor
+/dev/block/dm-10 221M 221M     0 100% /product
+/dev/block/dm-38 107G  15G   92G  14% /storage/emulated/0/Android/obb
+---mounts---
+/dev/block/dm-7 /system_ext erofs ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround 0 0
+/dev/block/dm-8 /vendor erofs ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround 0 0
+/dev/block/dm-10 /product erofs ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround 0 0
+/dev/block/dm-11 /vendor_dlkm erofs ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround 0 0
+/dev/block/by-name/prodnv /mnt/vendor ext4 rw,seclabel,nosuid,nodev,noatime,noauto_da_alloc 0 0
+/dev/block/by-name/ztepersist /mnt/vendor/persist ext4 rw,seclabel,nosuid,nodev,noatime,noauto_da_alloc 0 0
+
+===== BATTERY =====
+  status: 2
+  health: 2
+  level: 60
+
+===== SYSTEM PRIV-APPS =====
+AIEngine_MFV
+AJSOHO-LAUNCHER
+AppRelay
+BackupRestoreConfirmation
+BlockedNumberProvider
+BuiltInPrintService
+CalendarProvider_MFV
+CallLogBackup
+CallSetting_MFV
+CameraBurn
+CellBroadcastServiceModulePlatform
+ContactsProvider_MFV
+Contacts_MFV_Tablet
+DeviceStateReporter
+Dialer_MFV
+DistributeFileService
+DocumentsUI
+DownloadProvider_MFV
+DownloadUI_MFV
+DynamicSystemInstallationService
+ExternalStorageProvider
+FaceVerify_ZTE
+FileMgr_MFV_tablet
+FileMgr_MFV_tablet_NoCloud
+FusedLocation
+Gallery_Table
+GameAssist_sprd
+GameSpace_zte
+Gesture_tablet
+HJQBIND
+HaloBaseApp_Baidu
+InProcessNetworkStack
+InputDevices
+IntelliText_MFV_tablet
+JTYDN-PAD
+LauncherAdapter_MFV
+LauncherBeautifyAdapter
+LauncherBeautify_commonPad
+LiveWallpapersPicker
+LocalTransport
+ManagedProvisioning
+MediaProviderLegacy
+Messaging_Tablet
+MiBoard_PAD
+MmsService
+MtpService
+MultiScreenCollaboration_Tablet
+NeoGame
+NeoPay
+NubiaCamera
+NubiaPermissionCapsule
+ONS
+PhotoEditor_MFV
+PowerSaveMode_ZTE_Tablet
+ProxyHandler
+RCSService
+RetrieveClient_mfv
+SearchPad_MFV
+SecureKeyboard
+ServiceManager
+SettingsProvider_MFV
+SetupWizard_MFV
+SharedStorageBackup
+Shell
+SmartCast_MFV_tablet
+SoundPicker
+StatementService
+TeleService
+Telecom_MFV
+TelephonyProvider_MFV
+TencentNLP
+TimeStories_PAD
+UserDictionaryProvider
+VpnDialogs
+YuloreFramework
+ZBackupPlatService
+ZPermissionController_Tablet
+ZTEAfterSale
+ZteCloud
+ZteWindowReply_MFV
+aliveupdate_mfv
+dm_mfv
+eduApp_pad
+heartyservice_tablet
+nps
+quickrt
+zdmAppForKeyboard_systemuid
+zdmDaemon_common
+zdmDaemon_install
+zpkginstaller_Tablet
+ztemarket_mfv
+
+===== SYSTEM APPS =====
+Analytics_ZTE
+AppFilter
+BasicDreams
+BluetoothMidiService
+BookmarkProvider
+CameraExtensionsProxy
+CarrierDefaultApp
+CertInstaller
+CompanionDeviceManager
+DMComputer
+EMode
+EModeService
+EasterEgg
+ExtShared
+GameHelperLine-nubia_test
+GameHighLights_test
+HTMLViewer_MFV
+KeyChain
+KeyMapCenter_test
+LauncherResource_MyOSInternal
+LiveWallpaper_Pad_2560_2560
+MusicPlayer_Tablet
+NeoPush_ZTE
+NubiaGameHelperModule
+NubiaGameNotes
+OTAHY
+PacProcessor
+PlatformCaptivePortalLogin
+PrintRecommendationService
+PrintSpooler
+Recorder_Tablet
+SaleInfoCollectSystem
+SecureElement
+SimAppDialog
+SogouInput_HD
+SplitScreenGroup
+ThemeResource_Pad
+Traceur
+USmartLauncher
+UmeBrowser
+VideoPlayer_Pad
+WallpaperBackup
+ZteFastPair
+dbneopush
+flagreset
+handservice_tablet
+radarpermission
+vendorlogpermission
+zteaccount_mfv_pad
+zteotahy
+
+===== USB CONFIG =====
+mtp,adb
+adb
+
+===== WINDOWS USB DEVICES (ADB / UNISOC ports) =====
+
+Status Class     FriendlyName  InstanceId                                   
+------ -----     ------------  ----------                                   
+OK     USBDevice ADB Interface USB\VID_19D2&PID_0306&MI_01\6&3AFD8C57&0&0001
+
+
+

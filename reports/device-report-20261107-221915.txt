@@ -1,0 +1,50 @@
+﻿W202DS DEVICE PROBE  2026-11-07 22:19:15
+Read-only: no settings changed, no partitions written.
+
+===== ADB DEVICES =====
+List of devices attached
+
+
+===== KEY PROPERTIES =====
+
+===== BOOTLOADER / UNLOCK RELATED PROPS =====
+(empty or n/a)
+
+===== INSTALLED GOOGLE / GMS PACKAGES =====
+(empty or n/a)
+
+===== DISABLED GOOGLE PACKAGES (may be preinstalled but hidden) =====
+(empty or n/a)
+
+===== ROOT STATUS =====
+(empty or n/a)
+
+===== PARTITION TABLE (A/B, dynamic partitions) =====
+(empty or n/a)
+
+===== KERNEL CMDLINE =====
+(empty or n/a)
+
+===== MOUNTS AND FREE SPACE =====
+(empty or n/a)
+
+===== BATTERY =====
+(empty or n/a)
+
+===== SYSTEM PRIV-APPS =====
+(empty or n/a)
+
+===== SYSTEM APPS =====
+(empty or n/a)
+
+===== USB CONFIG =====
+(empty or n/a)
+
+===== WINDOWS USB DEVICES (ADB / UNISOC ports) =====
+
+Status Class     FriendlyName  InstanceId                                   
+------ -----     ------------  ----------                                   
+OK     USBDevice ADB Interface USB\VID_19D2&PID_0306&MI_01\6&3AFD8C57&0&0001
+
+
+

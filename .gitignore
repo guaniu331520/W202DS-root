@@ -1,35 +1,14 @@
-# Gradle files
-.gradle/
-build/
-.kotlin/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
+# 二进制/大文件不入库（GitHub 单文件上限 100MB，且含设备特定数据）
+*.img
 *.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+*.zip
+*.bin
+*.exe
+part.*
+stock_backup/
+apks/
+platform-tools/
+flash_writeback/
+spd_dump/
+__pycache__/
+*.log.bak

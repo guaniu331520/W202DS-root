@@ -1,0 +1,28 @@
+[2026-11-08 00:01:54] === Overnight READ-ONLY SPD probe started ===
+[2026-11-08 00:01:54] Rule: no write/erase/repartition/unlock commands, ever.
+[2026-11-08 00:01:54] Tool ready: C:\Users\Administrator\WorkBuddy\2026-11-07-21-28-02\flash-tools\spd_dump\spd_dump.exe
+[2026-11-08 00:01:55] Preload WinUSB INF rc=0: Microsoft PnP ���� |  | �����������������:  winusb.inf | ��������:         winusb.inf | �豸�ϵ���������������µ�: USB\VID_19D2&PID_0306&MI_01\6&3afd8c57&0&0001 | ����������Ѱ�װ���豸��: USB\VID_19D2&PID_0310&MI_01\6&32e4c173&0&0001 | ����������Ѱ�װ���豸��: USB\VID
+[2026-11-08 00:01:58] No SPD download-mode device yet (waiting 120s). 
+[2026-11-08 00:04:00] No SPD download-mode device yet (waiting 120s). 
+[2026-11-08 00:04:11] === Overnight READ-ONLY SPD probe started ===
+[2026-11-08 00:04:11] Rule: no write/erase/repartition/unlock commands, ever.
+[2026-11-08 00:04:11] Tool ready: C:\Users\Administrator\WorkBuddy\2026-11-07-21-28-02\flash-tools\spd_dump\spd_dump.exe
+[2026-11-08 00:04:12] Preload WinUSB INF rc=0: Microsoft PnP ���� |  | �����������������:  winusb.inf | ��������:         winusb.inf | �豸�ϵ���������������µ�: USB\VID_19D2&PID_0306&MI_01\6&3afd8c57&0&0001 | ����������Ѱ�װ���豸��: USB\VID_19D2&PID_0310&MI_01\6&32e4c173&0&0001 | ����������Ѱ�װ���豸��: USB\VID
+[2026-11-08 00:04:14] No SPD download-mode device yet (waiting 120s). 
+[2026-11-08 00:06:15] No SPD download-mode device yet (waiting 120s). 
+[2026-11-08 00:08:16] No SPD download-mode device yet (waiting 120s). 
+[2026-11-08 00:08:53] === Overnight READ-ONLY SPD probe started ===
+[2026-11-08 00:08:53] Rule: no write/erase/repartition/unlock commands, ever.
+[2026-11-08 00:08:53] Tool ready: C:\Users\Administrator\WorkBuddy\2026-11-07-21-28-02\flash-tools\spd_dump\spd_dump.exe
+[2026-11-08 00:08:53] Preload WinUSB INF rc=0: Microsoft PnP ���� |  | �����������������:  winusb.inf | ��������:         winusb.inf | �豸�ϵ���������������µ�: USB\VID_19D2&PID_0306&MI_01\6&3afd8c57&0&0001 | ����������Ѱ�װ���豸��: USB\VID_19D2&PID_0310&MI_01\6&32e4c173&0&0001 | ����������Ѱ�װ���豸��: USB\VID
+[2026-11-08 00:08:56] No SPD download-mode device yet (waiting 120s). 
+[2026-11-08 00:10:58] No SPD download-mode device yet (waiting 120s). 
+[2026-11-08 00:16:55] Diagnosis finished. Report written. Suspending PC in 90 seconds.
+[2026-11-08 00:18:25] Triggering S3 sleep now.
+[2026-11-08 00:18:25] SetSuspendState returned.
+[2026-11-08 00:19:17] Diagnosis finished. Report written. Suspending PC in 90 seconds.
+[2026-11-08 00:20:47] Triggering S3 sleep now.
+[2026-11-08 00:20:47] SetSuspendState returned.
+[2026-11-08 00:21:54] Diagnosis finished. Report written. Suspending PC in 90 seconds.
+[2026-11-08 00:23:24] Triggering S3 sleep now.
+[2026-11-08 00:23:24] SetSuspendState returned.
